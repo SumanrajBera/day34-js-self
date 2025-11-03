@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is webpage which is for understanding and practicing events and event handling">
+    <title>Events and event handling</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>JS Events and Event handling</h1>
+        <section class="clickBase">
+            <div id="click">
+                <h2>"click" Event</h2>
+                <p><b>Usage:</b> This event is used when we trigger based on clicking.</p>
+
+                <div class="grp">
+                    <div class="btn-click">Click ME</div>
+                    <p class="para-click">→ This para changes when clicked</p>
+                </div>
+            </div>
+
+            <div id="dblclick">
+                <h2>"dblclick" Event</h2>
+                <p><b>Usage:</b> This event is used when we trigger based on double clicking.</p>
+                <div class="grp">
+                    <div class="btn-dblClick">Double Click ME</div>
+                    <p class="para-dblClick">→ This para changes when double clicked</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="change-keydown">
+            <div id="change">
+                <h2>"change" Event</h2>
+                <p><b>Usage:</b> This event is triggered when there is change in input, textarea and select.</p>
+
+                <div class="grp">
+                    <select id="change-eve">
+                        <option selected disabled>Choose an option</option>
+                        <option value="apple">apple</option>
+                        <option value="banana">banana</option>
+                        <option value="guava">guava</option>
+                        <option value="mango">mango</option>
+                    </select>
+                    <p class="para-change">→ This para changes when you select something</p>
+                </div>
+            </div>
+
+            <div id="keydwn">
+                <h2>"keydown" Event</h2>
+                <p><b>Usage:</b> This event is triggered when you press a key on keyboard. (This version will only work
+                    for pc)</p>
+                <div class="grp">
+                    <p class="para-key">→ Your typed letters will be shown here</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="input-mouseover">
+            <div id="input">
+                <h2>"input" Event</h2>
+                <p><b>Usage:</b> This event is triggered when you input something in input, select and textarea.</p>
+
+                <div class="grp">
+                    <input type="text" placeholder="Enter anything" class="inp">
+                    <p class="para-input">→ This para changes when you select something</p>
+                </div>
+            </div>
+
+            <div id="mouseover">
+                <h2>"mouseover and mouseout" Event</h2>
+                <p><b>Usage:</b> Mouseover event is triggered when mouse is hovered over an element. Mouseout is triggered when mouse goes out of element</p>
+
+                <div class="grp">
+                    <div class="box"><p>Hover here</p></div>
+                    <p class="para-mouse">→ This para changes when you hover over the hover me box</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
