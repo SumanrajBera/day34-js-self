@@ -8,3 +8,4 @@
 - change
 - input
 - keydown
+- mouseover and mouseout
