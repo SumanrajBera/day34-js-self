@@ -114,13 +114,105 @@ main {
             background-color: white;
         }
     }
+
+    .featuresTechnique {
+        margin-block: 1rem;
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        .delegate {
+            padding: 1rem;
+            background-color: antiquewhite;
+            border-radius: 1rem;
+            @include flexColumn();
+            gap: .5rem;
+
+            ul {
+                padding-inline: 1rem;
+                cursor: pointer;
+            }
+        }
+
+        .bubble {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: antiquewhite;
+            border-radius: 1rem;
+            @include flexColumn();
+            gap: .5rem;
+
+            .a {
+                background-color: crimson;
+                padding: 1rem;
+
+                .b {
+                    background-color: yellowgreen;
+                    padding: 1rem;
+
+                    .c {
+                        background-color: aquamarine;
+                        padding: 1rem;
+
+                        button {
+                            display: block;
+                            margin-inline: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        .capture {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: antiquewhite;
+            border-radius: 1rem;
+            @include flexColumn();
+            gap: .5rem;
+
+            .a {
+                background-color: crimson;
+                padding: 1rem;
+
+                .b {
+                    background-color: yellowgreen;
+                    padding: 1rem;
+
+                    .c {
+                        background-color: aquamarine;
+                        padding: 1rem;
+
+                        button {
+                            display: block;
+                            margin-inline: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        .default {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: antiquewhite;
+            border-radius: 1rem;
+            @include flexColumn();
+            gap: .5rem;
+        }
+    }
 }
 
 @media (min-width: 750px) {
     main {
-        .clickBase, .change-keydown, .input-mouseover {
+
+        .clickBase,
+        .change-keydown,
+        .input-mouseover {
             flex-direction: row;
-            > div {
+
+            >div {
                 width: 50%;
             }
         }

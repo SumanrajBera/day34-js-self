@@ -9,3 +9,9 @@
 - input
 - keydown
 - mouseover and mouseout
+
+## Features and Techniques
+- Prevent Default
+- Event Delegation
+- Event Bubbling
+- Event Capturing

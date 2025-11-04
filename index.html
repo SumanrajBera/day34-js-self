@@ -86,6 +86,74 @@
                 </div>
             </div>
         </section>
+
+        <section class="featuresTechnique">
+            <h2>Features and Techniques</h2>
+
+            <div class="delegate">
+                <h3>Event Delegation</h3>
+                <p><b>Usage/Info:</b> This used when you have multiple items wiith some kind of event grouped together. So rather than selecting one at a time we delegate and select the parent to have the event listener. This based on Event bubbling.</p>
+                <p><b>→ Click on list item to strikethrough:</b></p>
+                <ul>
+                    <li>Buy Milk</li>
+                    <li>Shop for school</li>
+                    <li>Buy some veggies</li>
+                    <li>Wash your car</li>
+                    <li>Fill the gas tank</li>
+                </ul>
+            </div>
+
+            <div class="bubble">
+                <h3>Event Bubbling</h3>
+                <p><b>Usage/Info:</b> This happens almost everytime except for events which do not bubble. The inner workings are that events are triggered in a sequence from the element that triggered till it's last parent which has event.<i>(Siblings not included)</i></p>
+                <p><b>→ Click on the button in center and see all the events are triggered</b></p>
+                <div class="a">
+                    <p>A has a event</p>
+                    <div class="b">
+                        <p>B has a event</p>
+                        <div class="c">
+                            <p>C doesn't have a event</p>
+                            <button>Button doesn't have a event</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="capture">
+                <h3>Event Capturing</h3>
+                <p><b>Usage/Info:</b> This happens before event bubbling and is turned off by default. This is exact opposite of bubbling it means this will trigger the top level  event first then go towards the event triggering element. To turn this on pass a <b>boolean true</b> as an argument in even listener.</p>
+                <p><b>Note:</b> There are two phases in an event flow first phase is event capturing then second phase event bubbling happens.</p>
+                <p><b>→ Click on the button in center and see all the events are triggered</b></p>
+                <div class="a">
+                    <p>A has a event (Triggers first)</p>
+                    <div class="b">
+                        <p>B has a event (Triggers second)</p>
+                        <div class="c">
+                            <p>C has an event (Triggers fourth)</p>
+                            <button>Button has a event (Triggers third)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <div class="default">
+                <h3>Prevent Default</h3>
+                <p><b>Info:</b> This is used to prevent the default behavior from happening. Ex. Form submission causes reload of the page</p>
+                <p><b>→ There are two versions of form below one with prevent default and one without it.(Type input and submit it)</b></p>
+
+                <form id="form1">
+                    <p>This form is without prevent default.</p>
+                    <input type="text" placeholder="Enter something">
+                    <button>Submit</button>
+                </form>
+
+                <form id="form2">
+                    <p>This form is with prevent default.</p>
+                    <input type="text" placeholder="Enter something">
+                    <button>Submit</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <script src="script.js"></script>

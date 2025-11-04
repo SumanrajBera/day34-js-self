@@ -102,12 +102,93 @@ main .input-mouseover .box {
   width: fit-content;
   background-color: white;
 }
+main .featuresTechnique {
+  margin-block: 1rem;
+}
+main .featuresTechnique h2 {
+  margin-bottom: 1rem;
+}
+main .featuresTechnique .delegate {
+  padding: 1rem;
+  background-color: antiquewhite;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main .featuresTechnique .delegate ul {
+  padding-inline: 1rem;
+  cursor: pointer;
+}
+main .featuresTechnique .bubble {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: antiquewhite;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main .featuresTechnique .bubble .a {
+  background-color: crimson;
+  padding: 1rem;
+}
+main .featuresTechnique .bubble .a .b {
+  background-color: yellowgreen;
+  padding: 1rem;
+}
+main .featuresTechnique .bubble .a .b .c {
+  background-color: aquamarine;
+  padding: 1rem;
+}
+main .featuresTechnique .bubble .a .b .c button {
+  display: block;
+  margin-inline: auto;
+}
+main .featuresTechnique .capture {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: antiquewhite;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main .featuresTechnique .capture .a {
+  background-color: crimson;
+  padding: 1rem;
+}
+main .featuresTechnique .capture .a .b {
+  background-color: yellowgreen;
+  padding: 1rem;
+}
+main .featuresTechnique .capture .a .b .c {
+  background-color: aquamarine;
+  padding: 1rem;
+}
+main .featuresTechnique .capture .a .b .c button {
+  display: block;
+  margin-inline: auto;
+}
+main .featuresTechnique .default {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: antiquewhite;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 
 @media (min-width: 750px) {
-  main .clickBase, main .change-keydown, main .input-mouseover {
+  main .clickBase,
+  main .change-keydown,
+  main .input-mouseover {
     flex-direction: row;
   }
-  main .clickBase > div, main .change-keydown > div, main .input-mouseover > div {
+  main .clickBase > div,
+  main .change-keydown > div,
+  main .input-mouseover > div {
     width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */

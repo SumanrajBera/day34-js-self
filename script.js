@@ -40,3 +40,48 @@ mouseEve.addEventListener("mouseover", function(dets) {
 mouseEve.addEventListener("mouseout", function() {
     paraMouse.textContent = "Mouse out of hover";
 })
+
+let ul = document.querySelector("ul")
+ul.addEventListener("click", function(dets) {
+    if(dets.target.nodeName === "LI") {
+        dets.target.style.textDecoration = "line-through"
+    }
+})
+
+let a = document.querySelector(".a")
+let b = document.querySelector(".b")
+
+a.addEventListener("click", function() {
+    alert("A's event was triggered")
+})
+
+b.addEventListener("click", function() {
+    alert("B's event was triggered")
+})
+
+
+let aCap = document.querySelector(".capture .a")
+let bCap = document.querySelector(".capture .b")
+let cCap = document.querySelector(".capture .c")
+let btnCap = document.querySelector(".capture button")
+
+aCap.addEventListener("click", function() {
+    alert("A's event was triggered")
+}, true)
+
+bCap.addEventListener("click", function() {
+    alert("B's event was triggered")
+}, true)
+
+cCap.addEventListener("click", function() {
+    alert("C's event was triggered")
+})
+
+btnCap.addEventListener("click", function() {
+    alert("Button event was triggered")
+})
+
+let form = document.querySelector("#form2");
+form.addEventListener("click", function(dets) {
+    dets.preventDefault();
+})
